@@ -27,7 +27,7 @@
             Options for debugging
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-            <li><a class="dropdown-item" href="#">Reload</a></li>
+            <li><a class="dropdown-item" onclick="myFunction()">Reload</a></li>
             <li><a class="dropdown-item" href="#">Go back</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Debugging docs</a></li>
@@ -38,12 +38,16 @@
         </li>
       </ul>
       <form class="d-flex" method="POST" netlify>
-        <input class="form-control mr-2" type="search" placeholder="Enter Error code" aria-label="Search">
-        <button class="btn btn-outline-success" type="submit">Submit</button>
+        <input class="form-control mr-2" type="search" placeholder="Not Supported" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Not Supported</button>
       </form>
     </div>
   </div>
 </nav>
-
+<script>
+  function myFunction() {
+  location.reload()
+  }
+</script>
 </body>
 </html>
