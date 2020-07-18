@@ -48,7 +48,7 @@
   v.0.0.0 b - Start-out update
   </button>
 </div>
-  <p style="font-family: arial;" tabindex="1">IP: </p><p id="a" style="font-family: arial;" tabindex="1"></p>
+  <p style="font-family: arial;">' IP: </p><p id="a" style="font-family: arial;" tabindex="1"></p>
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
 
 <script type="text/javascript">
@@ -56,7 +56,7 @@
 		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
 
 			function(json) {
-				document.getElementById("a").innerHTML = json.ip
+				document.getElementById("a").innerHTML = "' " + json.ip
 			}
 		);
 	});
