@@ -49,8 +49,11 @@
   </button>
 </div>
   <p style="font-family: arial;">' IP: </p><p id="a" style="font-family: arial;" tabindex="1"></p>
+	<h1 style="font-family: arial;" id="b"></h1>
+	<script>
+		setInterval(function() { document.getElementById("b").innerHTML = Date() }, 1)
+	</script>
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
-
 <script type="text/javascript">
 	$(function() {
 		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
