@@ -37,9 +37,9 @@
           <a class="nav-link disabled" href="#" tabindex="-1" aria-disabled="true">Disabled</a>
         </li>
       </ul>
-      <form class="d-flex" method="POST" netlify>
-        <input class="form-control mr-2" type="search" placeholder="Not Supported" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Error</button>
+      <form class="d-flex">
+        <input class="form-control mr-2" type="search" placeholder="Scroll to" aria-label="Search" id="c">
+            <button class="btn btn-outline-success" onclick="functionScroll()">Action</button>
       </form>
     </div>
   </div>
@@ -53,6 +53,10 @@ Date
   <p style="font-family: arial;">' IP: </p><p id="a" style="font-family: arial;" tabindex="1"></p>
 	<script>
 		setInterval(function() { document.getElementById("b").innerHTML = Date() }, 1)
+		function functionScroll()	{
+		var x = document.getElementById("c").value
+		window.scrollTo(0, x);
+		}
 	</script>
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
