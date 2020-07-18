@@ -28,7 +28,7 @@
           </a>
           <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
             <li><a class="dropdown-item" onclick="myFunction()">Reload</a></li>
-            <li><a class="dropdown-item" href="#">Go back</a></li>
+            <li><a class="dropdown-item" onclick="historyBack()">Go back</a></li>
             <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item" href="#">Debugging docs</a></li>
           </ul>
@@ -47,6 +47,9 @@
 <script>
   function myFunction() {
   location.reload()
+  }
+  function historyBack() {
+  window.history.back()
   }
 </script>
 </body>
