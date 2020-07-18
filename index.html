@@ -48,6 +48,21 @@
   v.0.0.0 b - Start-out update
   </button>
 </div>
+  <p style="font-family: arial;">IP: </p><p id="a" style="font-family: arial;"></p>
+<script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
+
+<script type="text/javascript">
+
+	$(function() {
+
+		$.getJSON("https://api.ipify.org?format=jsonp&callback=?",
+
+			function(json) {
+				document.getElementById("a").innerHTML = json.ip
+			}
+		);
+	});
+</script>
 <script>
   function myFunction() {
   location.reload()
