@@ -69,10 +69,10 @@ Date
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
 <script type="text/javascript">
 	$(function() {
-		$.getJSON("http://ip-api.com/json/",
+		$.getJSON("https://api.ipify.org?format=json",
 
 			function(json) {
-				document.getElementById("a").innerHTML = "' " + json.query
+				document.getElementById("a").innerHTML = "' " + json.ip
 			}
 		);
 	});
