@@ -45,6 +45,7 @@
 		      
 	      </li>
       </ul>
+	    <button class="btn btn-outline-success" onclick="myFunctionScroll()">Enable</button>
       <form class="d-flex">
         <input class="form-control mr-2" placeholder="Scroll to" id="c">
             <button class="btn btn-outline-success" onclick="functionScroll()">Action</button>
@@ -64,6 +65,9 @@ Date
 		function functionScroll()	{
 		var x = document.getElementById("c").value
 		window.scrollTo(0, x);
+			function myFunctionScroll {
+				location.href = "https://codingcup04.netlify.app/?#scroll"
+			}
 		}
 	</script>
 <script type="text/javascript" src="//code.jquery.com/jquery.min.js"></script>
@@ -84,6 +88,10 @@ Date
   function historyBack() {
   window.history.back()
   }
+</script>
+	 <script src="https://cdn.jsdelivr.net/npm/darkmode-js@1.5.6/lib/darkmode-js.min.js"></script>
+<script>
+  new Darkmode().showWidget();
 </script>
 </body>
 </html>
